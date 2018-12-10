@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BA257BD21BE9D07000CD5F3 /* LoginViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA257BC21BE9D07000CD5F3 /* LoginViewReactor.swift */; };
+		5BA257C021BEA107000CD5F3 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA257BF21BEA107000CD5F3 /* UITextField+Extension.swift */; };
+		5BA257C221BEA35E000CD5F3 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA257C121BEA35E000CD5F3 /* UIButton+Extension.swift */; };
+		5BA257C421BEA420000CD5F3 /* RegisterViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA257C321BEA420000CD5F3 /* RegisterViewReactor.swift */; };
 		5BBD1F9C21BCAED400983A90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD1F9B21BCAED400983A90 /* AppDelegate.swift */; };
 		5BBD1FA121BCAED400983A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD1F9F21BCAED400983A90 /* Main.storyboard */; };
 		5BBD1FA321BCAED600983A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD1FA221BCAED600983A90 /* Assets.xcassets */; };
@@ -21,6 +25,10 @@
 
 /* Begin PBXFileReference section */
 		4FB9007CDFDA1B254A130DEC /* Pods-WhatLoversDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatLoversDo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatLoversDo/Pods-WhatLoversDo.release.xcconfig"; sourceTree = "<group>"; };
+		5BA257BC21BE9D07000CD5F3 /* LoginViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewReactor.swift; sourceTree = "<group>"; };
+		5BA257BF21BEA107000CD5F3 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		5BA257C121BEA35E000CD5F3 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		5BA257C321BEA420000CD5F3 /* RegisterViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewReactor.swift; sourceTree = "<group>"; };
 		5BBD1F9821BCAED400983A90 /* WhatLoversDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatLoversDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBD1F9B21BCAED400983A90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BBD1FA021BCAED400983A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +64,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5BA257BE21BEA0FC000CD5F3 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BA257BF21BEA107000CD5F3 /* UITextField+Extension.swift */,
+				5BA257C121BEA35E000CD5F3 /* UIButton+Extension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		5BBD1F8F21BCAED400983A90 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +94,7 @@
 		5BBD1F9A21BCAED400983A90 /* WhatLoversDo */ = {
 			isa = PBXGroup;
 			children = (
+				5BA257BE21BEA0FC000CD5F3 /* extensions */,
 				5BBD1FB021BCAFD600983A90 /* base */,
 				5BBD1FAD21BCAEFF00983A90 /* views */,
 			);
@@ -110,6 +128,8 @@
 			children = (
 				5BBD1FB221BCB02600983A90 /* LoginViewController.swift */,
 				5BBD1FB421BCB02D00983A90 /* RegisterViewController.swift */,
+				5BA257BC21BE9D07000CD5F3 /* LoginViewReactor.swift */,
+				5BA257C321BEA420000CD5F3 /* RegisterViewReactor.swift */,
 			);
 			path = auth;
 			sourceTree = "<group>";
@@ -274,10 +294,14 @@
 			files = (
 				5BBD1FB721BCB04900983A90 /* BaseViewController.swift in Sources */,
 				5BBD1FB321BCB02600983A90 /* LoginViewController.swift in Sources */,
+				5BA257C421BEA420000CD5F3 /* RegisterViewReactor.swift in Sources */,
 				5BBD1FAF21BCAF1300983A90 /* CoreViewController.swift in Sources */,
 				5BBD1F9C21BCAED400983A90 /* AppDelegate.swift in Sources */,
 				5BBD1FBA21BCB4B100983A90 /* CoreViewReactor.swift in Sources */,
+				5BA257C221BEA35E000CD5F3 /* UIButton+Extension.swift in Sources */,
+				5BA257C021BEA107000CD5F3 /* UITextField+Extension.swift in Sources */,
 				5BBD1FB521BCB02D00983A90 /* RegisterViewController.swift in Sources */,
+				5BA257BD21BE9D07000CD5F3 /* LoginViewReactor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

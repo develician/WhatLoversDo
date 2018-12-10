@@ -23,10 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         
-        let coreViewReactor = CoreViewReactor()
-        let coreViewController = CoreViewController(reactor: coreViewReactor)
+//        let coreViewReactor = CoreViewReactor()
+//        let coreViewController = CoreViewController(reactor: coreViewReactor)
         
-        window?.rootViewController = coreViewController
+        let loginViewReactor = LoginViewReactor()
+        let loginViewController = LoginViewController(reactor: loginViewReactor)
+        
+        let authNavigator = UINavigationController(rootViewController: loginViewController)
+        
+        window?.rootViewController = authNavigator
         window?.makeKeyAndVisible()
         
         return true

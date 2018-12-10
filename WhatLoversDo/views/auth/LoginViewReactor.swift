@@ -1,8 +1,8 @@
 //
-//  CoreViewReactor.swift
+//  LoginViewReactor.swift
 //  WhatLoversDo
 //
-//  Created by killi8n on 09/12/2018.
+//  Created by killi8n on 10/12/2018.
 //  Copyright © 2018 aaaalpooo. All rights reserved.
 //
 
@@ -10,33 +10,37 @@ import ReactorKit
 import RxSwift
 import RxCocoa
 
-class CoreViewReactor: Reactor {
+class LoginViewReactor: Reactor {
     
     init() {
-        self.initialState = State(isChecking: true)
+        self.initialState = State()
     }
     
     enum Action {
         
     }
-
+    
     struct State {
-        var isChecking: Bool
+        
     }
     
     enum Mutation {
         
     }
+
+    var initialState: State
     
-    let initialState: State
+
     
 //    func mutate(action: Action) -> Observable<Mutation> {
 //
 //    }
-//
-//    func reduce(state: State, mutation: Mutation) -> State {
-//
-//    }
+    
 
+    
+//    func reduce(state: State, mutation: Mutation) -> State {
+//        
+//    }
+    
     
 }
